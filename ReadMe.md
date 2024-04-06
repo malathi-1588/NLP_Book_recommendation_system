@@ -12,3 +12,8 @@ Features
     1) Input a book title to receive recommendations using the TF-IDF based method.
     2) Answer preference questions to receive personalized recommendations based on keyword matching.
     3) Explore recommended books and view summaries using the extractive summarization feature.
+
+
+![page2](https://github.com/malathi-1588/NLP_Book_recommendation_system/assets/116137959/5bc133c8-80ba-4a4d-ada8-041eab135f5d)
+![page4](https://github.com/malathi-1588/NLP_Book_recommendation_system/assets/116137959/059626bf-aea7-451c-a7b6-775b512a96d6)
+![page3](https://github.com/malathi-1588/NLP_Book_recommendation_system/assets/116137959/a01b77cf-2f49-4b6b-ad14-929378e9e630)
