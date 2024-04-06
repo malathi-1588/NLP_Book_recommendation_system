@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Output</title>
+<style>
+body {
+    font-family: 'Brush Script MT, cursive;
+    margin: 0;
+    padding: 0;
+    background: url('https://s26162.pcdn.co/wp-content/uploads/sites/3/2023/04/AdobeStock_525096649.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Faded black background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    color: white; /* Set font color to white */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Set heading color to white */
+}
+
+h2 {
+    margin-top: 20px;
+    color: #ffffff; /* Set sub-heading color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+li:before {
+    content: '\2022'; /* Add bullet point */
+    color: #ffffff; /* Set bullet point color */
+    position: absolute;
+    left: 0;
+}
+
+a {
+    color: #fff; /* Set link color to white */
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Recommended Books</h1>
+    <h2>Top Books:</h2>
+    <ul>
+        {% for i in range(top_books|length) %}
+            <li><a href="{{ book_urls[i] }}" target="_blank">{{ top_books[i] }}</a></li>
+        {% endfor %}
+    </ul>
+    <h2>List Summary:</h2>
+    <ul>
+        {% for summary in list_summary %}
+            <li>{{ summary }}</li>
+	        <br>
+        {% endfor %}
+    </ul></div>
+</body></html>

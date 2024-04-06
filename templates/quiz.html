@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Preferences Quiz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ink+Free&display=swap">
+
+<style>
+    body {
+        font-family: 'Ink Free', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('https://s26162.pcdn.co/wp-content/uploads/sites/3/2023/04/AdobeStock_525096649.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: rgba(0, 0, 0, 0.7); /* Faded black background */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        color: white; /* Set font color to white */
+    }
+    
+    h1 {
+        text-align: center;
+        color: #fff; /* Set heading color to white */
+	font-size: 50px;
+    }
+    
+    form {
+        margin-top: 30px;
+    }
+    
+    label {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+	font-size: 20px;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Set input background to white with opacity */
+        color: #333; /* Set input text color */
+    }
+    
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Set select background to white with opacity */
+        color: #333; /* Set select text color */
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Book Preferences Quiz</h1>
+    <form action="#" method="post">
+        <label for="genres">What genres do you enjoy reading? </label>
+        <input type="text" id="genres" name="genres" placeholder="(e.g., Mystery, Romance, Science Fiction, Fantasy, Historical Fiction, Non-fiction, etc.)">
+        
+        <label for="themes">Are there any specific themes or topics you prefer in books? </label>
+        <input type="text" id="themes" name="themes" placeholder="(e.g., Adventure, Love, Friendship, War, Politics, Science, History, etc.)">
+        
+        <label for="settings">Do you have any preferred book settings? </label>
+        <input type="text" id="settings" name="settings" placeholder="(e.g., Urban, Rural, Historical, Futuristic, etc.)">
+        
+        <label for="development">How important is character development to you in a book?</label>
+        <select id="development" name="development">
+            <option value="very_important">Very important</option>
+            <option value="somewhat_important">Somewhat important</option>
+            <option value="not_important">Not important</option>
+        </select>
+        
+        <label for="pace">Do you prefer books with a fast-paced plot or a slower, more reflective pace?</label>
+        <select id="pace" name="pace">
+            <option value="fast_paced">Fast-paced</option>
+            <option value="slow_paced">Slow-paced</option>
+        </select>
+        
+        <input type="submit" formaction = "/quiz_submit" value="Find Book">
+    </form>
+</div>
+
+</body>
+</html>
